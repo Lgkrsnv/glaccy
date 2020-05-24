@@ -20,11 +20,34 @@
                 <li><a href="#about-company">О Компании</a></li>
             </ul>
         </nav>
-        <ul class="user-navigation">
-            <li class="user-search"></li>
-            <li class="user-login"></li>
-            <li class="user-cart"></li>
-        </ul>
+        <div class="header-buttons">
+            <div class="search-top">
+                <input type="button" name="search" class="user-search">
+
+                <div class="search-submenu">
+                    <label for="search-field">Что ищем?</label>
+                    <input type="search" name="search-field" id="search-field">
+                </div>
+            </div>
+
+            <div class="user-login-top">
+                <input type="button" name="login" class="user-login">
+
+                <div class="user-login-submenu">
+                    <label for="user-email">Электронная почта</label>
+                    <input type="text" name="user-email" id="user-email" placeholder="Электронная почта">
+                    <label for="user-password"></label>
+                    <input type="password" name="user-password" id="user-password" placeholder="Пароль">
+                    <input class="button" type="button" value="Войти">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                </div>
+            </div>
+
+            <div>
+                <input type="button" name="cart" class="user-cart" value="Пусто">
+            </div>
+        </div>
         <div class="header-info">
             <p>
                 C 10 до 20, ежедневно<br> 8 (495) 450-25-25
