@@ -22,34 +22,39 @@
         </nav>
         <div class="header-buttons">
             <div class="search-top">
-                <input type="button" name="search" class="user-search">
-
-                <div class="search-submenu">
-                    <label for="search-field">Что ищем?</label>
-                    <input type="search" name="search-field" id="search-field">
-                </div>
-            </div>
-
-            <div class="user-login-top">
-                <form action="http://htmlacademy.ru" method="GET">
-                    <input type="button" name="login" class="user-login">
+                <form action="http:htmlacademy.ru" method="GET">
+                    <button type="button" name="search" class="user-search"><img src="#" alt="Поиск"></button>
+                    <div class="search-submenu">
+                        <label for="search-field">Что ищем?</label>
+                        <input type="search" name="search-field" id="search-field">
+                    </div>
                 </form>
-                <div class="user-login-submenu">
-                    <form action="http://htmlacademy.ru" method="POST">
-                        <label for="user-email">Электронная почта</label>
-                        <input type="text" name="user-email" id="user-email" placeholder="Электронная почта">
-                        <label for="user-password"></label>
-                        <input type="password" name="user-password" id="user-password" placeholder="Пароль">
-                        <input class="button" type="button" value="Войти">
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Регистрация</a>
-                    </form>
-                </div>
             </div>
+        </div>
 
-            <div>
-                <input type="button" name="cart" class="user-cart" value="Пусто">
+        <div class="user-login-top">
+            <form action="http://htmlacademy.ru" method="GET">
+                <button type="button" name="login" class="user-login"><img src="#" alt="#">Вход</button>
+            </form>
+            <div class="user-login-submenu">
+                <form action="http://htmlacademy.ru" method="POST">
+                    <label for="user-email">Электронная почта</label>
+                    <input type="text" name="user-email" id="user-email" placeholder="Электронная почта">
+                    <label for="user-password"></label>
+                    <input type="password" name="user-password" id="user-password" placeholder="Пароль">
+                    <input class="button" type="submit" value="Войти">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                </form>
             </div>
+        </div>
+
+        <div>
+            <form action="http://htmlacademy.ru" method="POST">
+                <button type="button" name="cart" class="user-cart"><img src="#" alt="Корзина"> Пусто</button>
+                <!-- Будет при наведении показывать содержимое корзины? -->
+            </form>
+        </div>
         </div>
         <div class="header-info">
             <p>
@@ -61,17 +66,24 @@
         <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
         <div class="slider">
             <h2 class="visually-hidden">Слайдер</h2>
+            <!-- Здесь будет слайдер -->
         </div>
 
         <section class="offers">
             <h2 class="visually-hidden">Подарки к покупке</h2>
             <div class="offer-raspberry">
                 <h3>Малинка даром!</h3>
-
+                <p>При покупке 2 кг юбого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <form action="http://htmlacademy.ru" method="POST">
+                    <button type="submit" class="button" name="raspberry">Хочу варенье!</button>
+                </form>
             </div>
             <div class="offer-chocolate">
                 <h3>Шоколадки даром!</h3>
-
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                <form action="http://htmlacademy.ru" method="POST">
+                    <button type="submit" class="button" name="chocolate">Хочу варенье!</button>
+                </form>
             </div>
         </section>
 
@@ -82,12 +94,22 @@
 
         <section class="features">
             <h2 class="visually-hidden">О магазине и производстве</h2>
-
+            <p class="features-lead">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+            <div class="features-left">
+                <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            </div>
+            <div class="features-right">
+                <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+            </div>
         </section>
 
         <article class="blog">
-            <h2>Новое в нашем блоге</h2>
-
+            <h2 class="article-header">Новое в нашем блоге</h2>
+            <a href="#">
+                <p>10 способов сервировки фруктовых щербетов к столу</p>
+            </a>
         </article>
 
         <section class="subscribe">
@@ -103,11 +125,11 @@
         <section class="feedback">
             <h2 class="visually-hidden">Форма обратной связи</h2>
             <form action="http://htmlacademy.ru" method="POST">
-                <label for="subscribe-email">Подпишитесь на нашу садкую рассыку и будете всегда в курсе 
-                    всего самого вкусного, что у нас происходит. Обещаем не спамить и не сать всякой 
+                <label for="subscribe-email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
+                    всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой 
                     ненужной ерунды. Честно =)</label>
                 <input type="email" name="subscribe-email" id="subscribe-email">
-                <input type="button" class="button" name="subscribe-button" value="Отправить">
+                <input type="submit" class="button" name="subscribe-button" value="Отправить">
 
             </form>
 
