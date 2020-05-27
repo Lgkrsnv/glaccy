@@ -15,46 +15,54 @@
         <img src="img/index-logo.png" alt="Логотип">
         <nav class="main-navigation">
             <ul class="site-navigation">
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#delivery-payment.html">Доставка и оплата</a></li>
-                <li><a href="#about-company">О Компании</a></li>
+                <li class="catalog-drop-down-list"><a href="catalog.html">Каталог</a></li>
+                <ul>
+                    <li class="catalog-drop-down-list-item"><span><a href="new.html">Новинки</a><span></li>
+                        <li class="catalog-drop-down-list-item"><a href="creamy.html"></a> Сливочное</li>
+                        <li class="catalog-drop-down-list-item"><a href="sherbets.html"></a> Щербеты</li>
+                        <li class="catalog-drop-down-list-item"><a href="fruit-ice.html"></a> Фруктовый лёд</li>
+                        <li class="catalog-drop-down-list-item"><a href="melorin.html"></a> Мелорин</li>
+                    </ul>
+                <li><a href="delivery-payment.html">Доставка и оплата</a></li>
+                <li><a href="about-company">О Компании</a></li>
             </ul>
         </nav>
+
         <div class="header-buttons">
-            <div class="search-top">
+            <div class="user-search">
+                <button type="button" name="search" id="user-search"><img src="#" alt="Поиск"></button>
+            </div>
+            <div class="user-search-drop-down">
                 <form action="http:htmlacademy.ru" method="GET">
-                    <button type="button" name="search" class="user-search"><img src="#" alt="Поиск"></button>
-                    <div class="search-submenu">
-                        <label for="search-field">Что ищем?</label>
-                        <input type="search" name="search-field" id="search-field">
-                    </div>
+                    <label for="search-field">Что ищем?</label>
+                    <input type="search" name="search-field" id="search-field">
                 </form>
             </div>
-        </div>
+        
 
-        <div class="user-login-top">
-            <form action="http://htmlacademy.ru" method="GET">
-                <button type="button" name="login" class="user-login"><img src="#" alt="#">Вход</button>
-            </form>
-            <div class="user-login-submenu">
-                <form action="http://htmlacademy.ru" method="POST">
-                    <label for="user-email">Электронная почта</label>
-                    <input type="text" name="user-email" id="user-email" placeholder="Электронная почта">
-                    <label for="user-password"></label>
-                    <input type="password" name="user-password" id="user-password" placeholder="Пароль">
-                    <input class="button" type="submit" value="Войти">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Регистрация</a>
+            <div class="user-login">
+                <button type="button" name="login" id="user-login"><img src="#" alt="#">Вход</button>
+                <div class="user-login-drop-down">
+                    <form action="http://htmlacademy.ru" method="POST">
+                        <label for="user-email">Электронная почта</label>
+                        <input type="text" name="user-email" id="user-email" placeholder="Электронная почта">
+                        <label for="user-password"></label>
+                        <input type="password" name="user-password" id="user-password" placeholder="Пароль">
+                        <input class="button" type="submit" value="Войти">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Регистрация</a>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <a href="cart.html">
+                    <button type="button" name="cart" id="user-cart"><img src="#" alt="Корзина"> Пусто</button>
+                </a>
+                    <!-- Будет при наведении показывать содержимое корзины? 
+                    и как обернуть? <a class="button button-cart" href="#">::before Пусто</a>-->
                 </form>
             </div>
-        </div>
-
-        <div>
-            <form action="http://htmlacademy.ru" method="POST">
-                <button type="button" name="cart" class="user-cart"><img src="#" alt="Корзина"> Пусто</button>
-                <!-- Будет при наведении показывать содержимое корзины? -->
-            </form>
-        </div>
         </div>
         <div class="header-info">
             <p>
@@ -69,6 +77,7 @@
             <div>
                 <p>Крем-брюле и пломбир с малиновым джемом</p>
                 <a href="#" class="button">Давайте оба!</a>
+                <!-- или это <button type="button" class="button slider-button" name="slider-button-FIRST">Давайте оба!</button> -->
             </div>
             <div>
                 <p>Шоколадный пломбир и лимонный сорбет</p>
@@ -110,79 +119,96 @@
 
         <section class="hit">
             <h2 class="visually-hidden">Хиты продаж</h2>
+            <!-- Разметить 4 хита с ховером и бефор -->
+            <!-- <p>310 ₽<span>/кг</span></p> -->
 
-        </section>
+                        </section>
 
-        <section class="features">
-            <h2 class="visually-hidden">О магазине и производстве</h2>
-            <p class="features-lead">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-            <div class="features-left">
-                <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            </div>
-            <div class="features-right">
-                <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
-            </div>
-        </section>
+                        <section class="features">
+                            <h2 class="visually-hidden">О магазине и производстве</h2>
+                            <p class="features-lead">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+                            <div class="features-left">
+                                <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                            </div>
+                            <div class="features-right">
+                                <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+                            </div>
+                        </section>
 
-        <article class="blog">
-            <h2 class="article-header">Новое в нашем блоге</h2>
-            <a href="#">
-                <p>10 способов сервировки фруктовых щербетов к столу</p>
-            </a>
-        </article>
+                        <article class="blog">
+                            <h1 class="article-header">Новое в нашем блоге</h1>
+                            <a href="blog.html">
+                                <p>10 способов сервировки фруктовых щербетов к столу</p>
+                            </a>
+                        </article>
 
-        <section class="subscribe">
-            <h2 class="visually-hidden">Подписаться! Обещаем не спамить!</h2>
-            <form action="http://htmlacademy.ru" method="POST">
-                <label for="subscribe-email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
+                        <section class="subscribe">
+                            <h2 class="visually-hidden">Подписаться! Обещаем не спамить!</h2>
+                            <form action="http://htmlacademy.ru" method="POST">
+                                <label for="subscribe-email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
                     всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой 
                     ненужной ерунды. Честно =)</label>
-                <input type="email" name="subscribe-email" id="subscribe-email">
-                <input type="submit" class="button" name="subscribe-button" value="Отправить">
+                                <input type="email" name="subscribe-email" id="subscribe-email">
+                                <input type="submit" class="button" name="subscribe-button" value="Отправить">
 
-            </form>
-        </section>
+                            </form>
+                        </section>
 
-        <section class="map">
-            <h2 class="visually-hidden">Карта. Как нас найти.</h2>
+                        <section class="map">
+                            <h2 class="visually-hidden">Карта. Как нас найти.</h2>
+                            <!-- Вставить карту с меткой в виде мороженого -->
 
-        </section>
+                        </section>
 
-        <section class="feedback">
-            <h2 class="visually-hidden">Форма обратной связи</h2>
-            <div class="feedback-form">
-                <p>Адрес главного офиса и<br> офлайн магазина:<br><span>ул. Большая Конюшенная<br>
+                        <section class="feedback">
+                            <h2 class="visually-hidden">Форма обратной связи</h2>
+                            <div class="feedback-form">
+                                <p>Адрес главного офиса и<br> офлайн магазина:<br><span>ул. Большая Конюшенная<br>
                         19/8, Санкт-Петербург</span></p>
-                <p>Для заказов по телефону: <br><span>8 812 450-25-25</span> <br>(с 10 до 20 ежедневно)</p>
-                <button type="submit" class="button" name="feedback-button">Форма обратной связи</button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="social">
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Vk</a>
-        </div>
+                                <p>Для заказов по телефону: <br><span>8 812 450-25-25</span> <br>(с 10 до 20 ежедневно)</p>
+                                <a class='button' href='contact-me-form.html'>Форма обратной связи</a>
+                                <!-- <button type="submit" class="button" name="feedback-button">Форма обратной связи</button> -->
+                            </div>
+                        </section>
+                        </main>
+                        <footer>
+                            <div class="social">
+                                <ul>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Vk</a></li>
+                                </ul>
+                            </div>
 
-        <div class="footer-info">
-            <a href="#">Для производителей </a>
-            <a href="#">О производстве</a>
-        </div>
-        <div class="footer-docs">
-            <a href="#">Наши документы</a>
-            <a href="#">Экологические стандарты</a>
-        </div>
+                            <div class="footer-info">
+                                <a href="#">Для производителей </a>
+                                <a href="#">О производстве</a>
+                            </div>
+                            <div class="footer-docs">
+                                <a href="#">Наши документы</a>
+                                <a href="#">Экологические стандарты</a>
+                            </div>
 
 
-        <div class="copyright">
-            <img src="#" alt="HTMLacademy">
-            <p>Сделано в <a href="http://htmlacademy.ru">HTML academy</a> 2017</p>
-        </div>
-    </footer>
+                            <div class="copyright">
+                                <img src="#" alt="HTMLacademy">
+                                <p>Сделано в <a href="http://htmlacademy.ru">HTML academy</a> 2017</p>
+                            </div>
+                            <div class="feedback-form">
+                                <form action="###" method="POST">
+                                    <label class="popup" for="your-name">Как Вас зовут? </label>
+                                    <input type="text" name="your-name" id="your-name" placeholder="Как Вас зовут?"><br>
+                                    <label class="popup" for="your-email">Ваша почта для ответа </label>
+                                    <input type="email" name="your-email" id="your-email" placeholder="Ваша почта для ответа"><br>
+                                    <label class="popup" for="user-massege">Напишите что-нибудь здесь...</label><br>
+                                    <textarea name="user-message" id="user-message" cols="30" rows="10" placeholder="Напишите что-нибудь здесь..."></textarea><br>
+                                    <button type="submit" class="button submit" name="submit-button">Отправить</button>
+                                </form>
+                            </div>
+                        </footer>
 </body>
 
 </html>
