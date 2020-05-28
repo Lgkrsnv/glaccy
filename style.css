@@ -113,19 +113,43 @@ body {
 }
 
 .blog {
-    padding: 10px;
+    margin: 30px;
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
     background: url('img/bg-ice-cream.jpg');
-    width: 560px;
-    height: 200px;
-    border-radius: 10px;
+    width: 510px;
+    height: 170px;
+    border-radius: 25px;
+}
+
+.blog .article-header {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.blog a {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: black;
+}
+
+.blog p {
+    margin-right: 250px;
+}
+
+.blog a:hover {
+    color: rgb(247, 64, 18);
 }
 
 .subscribe {
     padding: 30px;
     margin: 25px;
     color: black;
-    width: 560px;
-    height: 200px;
+    width: 510px;
+    height: 170px;
     background: #e4e3e2 url("img/bg-letter-pattern.png") repeat;
     border-radius: 15px;
 }
@@ -136,8 +160,8 @@ body {
     right: 30px;
     margin: 5px;
     padding: 30px;
-    width: 550px;
-    height: 190px;
+    width: 500px;
+    height: 160px;
     border-radius: 25px;
     background: rgb(221, 218, 214);
 }
