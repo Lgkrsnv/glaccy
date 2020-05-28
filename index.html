@@ -12,17 +12,17 @@
 
 <body>
     <header class="main-header">
-        <img src="img/index-logo.png" alt="Логотип">
+        <img src="img/logo.svg" alt="Логотип">
         <nav class="main-navigation">
             <ul class="site-navigation">
                 <li class="catalog-drop-down-list"><a href="catalog.html">Каталог</a></li>
                 <ul>
                     <li class="catalog-drop-down-list-item"><span><a href="new.html">Новинки</a><span></li>
-                        <li class="catalog-drop-down-list-item"><a href="creamy.html"></a> Сливочное</li>
-                        <li class="catalog-drop-down-list-item"><a href="sherbets.html"></a> Щербеты</li>
-                        <li class="catalog-drop-down-list-item"><a href="fruit-ice.html"></a> Фруктовый лёд</li>
-                        <li class="catalog-drop-down-list-item"><a href="melorin.html"></a> Мелорин</li>
-                    </ul>
+                    <li class="catalog-drop-down-list-item"><a href="creamy.html"></a> Сливочное</li>
+                    <li class="catalog-drop-down-list-item"><a href="sherbets.html"></a> Щербеты</li>
+                    <li class="catalog-drop-down-list-item"><a href="fruit-ice.html"></a> Фруктовый лёд</li>
+                    <li class="catalog-drop-down-list-item"><a href="melorin.html"></a> Мелорин</li>
+                </ul>
                 <li><a href="delivery-payment.html">Доставка и оплата</a></li>
                 <li><a href="about-company">О Компании</a></li>
             </ul>
@@ -38,7 +38,7 @@
                     <input type="search" name="search-field" id="search-field">
                 </form>
             </div>
-        
+
 
             <div class="user-login">
                 <button type="button" name="login" id="user-login"><img src="#" alt="#">Вход</button>
@@ -59,7 +59,7 @@
                 <a href="cart.html">
                     <button type="button" name="cart" id="user-cart"><img src="#" alt="Корзина"> Пусто</button>
                 </a>
-                    <!-- Будет при наведении показывать содержимое корзины? 
+                <!-- Будет при наведении показывать содержимое корзины? 
                     и как обернуть? <a class="button button-cart" href="#">::before Пусто</a>-->
                 </form>
             </div>
@@ -72,12 +72,42 @@
     </header>
     <main class="container">
         <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
-        <div class="slider">
-            <h2 class="visually-hidden">Слайдер</h2>
+          <section>
+              <h1 class="visually-hidden">Слайдер со вкусными предожениями</h1>
+              <div class="slider">
+                  <input type="radio" id="btn-1" name="toggle" checked>
+                  <input type="radio" id="btn-2" name="toggle">
+                  <input type="radio" id="btn-3" name="toggle">
+                  <div class="slider-inner">
+                      <div class="slider-slides">
+                          <img src="img/slider-slide-1.png" alt="Крем-брюле и пломбир с малиновым джемом">
+                          <img src="img/slider-slide-2.png" alt="Шоколадный пломбир и лимонный сорбет">
+                          <img src="img/slider-slide-3.png" alt="Пломбир с помадкой и клубничный щербет">
+                      </div>
+                  </div>
+                  <div class="slider-controls">
+                      <label for="btn-1"></label>
+                      <label for="btn-2"></label>
+                      <label for="btn-3"></label>
+                  </div>
+              </div>
+          </section>
+        <!-- <div class="slider">
+            <h2 class="visually-hidden">Слайдер с вкусными предложениями</h2>
+            <div class="slider">
+                <div class="slider-controls"></div>
+                <div class="slider-inner">
+                    <div class="slider-slides">
+                        <img src="img/slider-slide-1.png" alt="Кекс смотрит на еду">
+                        <img src="img/slider-slide-2.png" alt="Кекс смотрит на тебя">
+                        <img src="img/slider-slide-3.png" alt="Кекс не хочет никуда смотреть">
+                    </div>
+        </div>    
+        <div class="slider-caption">
             <div>
                 <p>Крем-брюле и пломбир с малиновым джемом</p>
                 <a href="#" class="button">Давайте оба!</a>
-                <!-- или это <button type="button" class="button slider-button" name="slider-button-FIRST">Давайте оба!</button> -->
+                ? или это <button type="button" class="button slider-button" name="slider-button-FIRST">Давайте оба!</button> 
             </div>
             <div>
                 <p>Шоколадный пломбир и лимонный сорбет</p>
@@ -93,24 +123,29 @@
                 <label for="slider-first"></label>
                 <label for="slider-second"></label>
                 <label for="slider-third"></label>
-                <input type="radio" class="radiobutton" name="slider-radiobutton" id="slider-first" value="slider-first" checked>
-                <input type="radio" class="radiobutton" name="slider-radiobutton" id="slider-second" value="slider-second">
-                <input type="radio" class="radiobutton" name="slider-radiobutton" id="slider-third" value="slider-third">
+                <input type="radio" class="radiobutton" name="slider-radiobutton" id="slider-first" value="slider-first"
+                    checked>
+                <input type="radio" class="radiobutton" name="slider-radiobutton" id="slider-second"
+                    value="slider-second">
+                <input type="radio" class="radiobutton" name="slider-radiobutton" id="slider-third"
+                    value="slider-third">
             </form>
-        </div>
+        </div> -->
 
         <section class="offers">
             <h2 class="visually-hidden">Подарки к покупке</h2>
             <div class="offer-raspberry">
                 <h3>Малинка даром!</h3>
-                <p>При покупке 2 кг юбого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <p>При покупке 2 кг юбого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+                </p>
                 <form action="http://htmlacademy.ru" method="POST">
                     <button type="submit" class="button" name="raspberry">Хочу варенье!</button>
                 </form>
             </div>
             <div class="offer-chocolate">
                 <h3>Шоколадки даром!</h3>
-                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+                    бесплатно.</p>
                 <form action="http://htmlacademy.ru" method="POST">
                     <button type="submit" class="button" name="chocolate">Хочу варенье!</button>
                 </form>
@@ -147,8 +182,8 @@
                         <section class="subscribe">
                             <h2 class="visually-hidden">Подписаться! Обещаем не спамить!</h2>
                             <form action="http://htmlacademy.ru" method="POST">
-                                <label for="subscribe-email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
-                    всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой 
+                                <label for="subscribe-email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                    всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой
                     ненужной ерунды. Честно =)</label>
                                 <input type="email" name="subscribe-email" id="subscribe-email">
                                 <input type="submit" class="button" name="subscribe-button" value="Отправить">
@@ -194,7 +229,7 @@
 
 
                             <div class="copyright">
-                                <img src="#" alt="HTMLacademy">
+                                <a href="http://htmlacademy.ru"><img src="img/htmacademy-logo.png" alt="HTMLacademy"></a>
                                 <p>Сделано в <a href="http://htmlacademy.ru">HTML academy</a> 2017</p>
                             </div>
                             <div class="feedback-form">
