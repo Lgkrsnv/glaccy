@@ -51,7 +51,7 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     border: 3px solid white;
-    background-color: ##849d8f;
+    background-color: #849d8f;
     transition: background-color 0.2s;
 }
 
@@ -71,6 +71,75 @@ body {
 
 #btn-3:checked~.slider-inner .slider-slides {
     transform: translate(-2090px);
+}
+
+.offer-raspberry {
+    padding: 10px;
+    background: #849d8f url("img/bg-razz.jpg");
+    width: 560px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.offer-chocolate {
+    padding: 10px;
+    background: #849d8f url("img/bg-chocolate.jpg");
+    width: 560px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.hit-list-item img {
+    border-radius: 50%;
+}
+
+.features {
+    padding: 10px;
+    background: url("img/wafer-bg-pattern.jpg");
+    color: black;
+    border-radius: 10px;
+}
+
+.features-lead {
+    padding: 10px;
+    font-weight: 700;
+}
+
+.button {
+    padding: 10px;
+    background-color: coral;
+    color: white;
+    border-radius: 10px;
+}
+
+.blog {
+    padding: 10px;
+    background: url('img/bg-ice-cream.jpg');
+    width: 560px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.subscribe {
+    padding: 30px;
+    margin: 25px;
+    color: black;
+    width: 560px;
+    height: 200px;
+    background: #e4e3e2 url("img/bg-letter-pattern.png") repeat;
+    border-radius: 15px;
+}
+
+.subscribe div {
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+    margin: 5px;
+    padding: 30px;
+    width: 550px;
+    height: 190px;
+    border-radius: 25px;
+    background: rgb(221, 218, 214);
 }
 
 
